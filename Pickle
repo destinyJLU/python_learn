@@ -1,0 +1,17 @@
+#using pickle for ml-model
+import pickle
+clf = sklearn-model(params)
+#pickle model
+s = pickle.dumps(clf)
+#use model
+clf2 = pickle.loads(s)
+clf2.predict(X)
+
+
+#Sklearn externals joblib
+from sklearn.externals import joblib
+joblib.dump(clf,'filename.pkl')
+clf = joblib.load('filename.pkl')
+clf.predict(X)
+
+
