@@ -1,0 +1,8 @@
+create a new picture: f,ax = plt.subplots(figsize=(,))
+when u want to draw,just draw with (ax=ax)
+
+1.观看一维数据data的分布情况，画柱状图————————sns.distplot(data,kde=True?False,rug=True?False)
+2.观看一维数据data的走势，画折线图———————————sns.kdeplot(x,shade=Ture?False,label="")  plt.legend()
+3.观看二维数据的分布，画散点图，类似scatter————sns.jointplot(x="x",y="y",data=data,kind="kde?hex")
+4.观看特征之间的相关性，画出若干子图——————————sns.pairplot(data)
+5.
