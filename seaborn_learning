@@ -5,4 +5,6 @@ when u want to draw,just draw with (ax=ax)
 2.观看一维数据data的走势，画折线图———————————sns.kdeplot(x,shade=Ture?False,label="")  plt.legend()
 3.观看二维数据的分布，画散点图，类似scatter————sns.jointplot(x="x",y="y",data=data,kind="kde?hex")
 4.观看特征之间的相关性，画出若干子图——————————sns.pairplot(data)
-5.
+5.观看特征与目标的相关性，柱状图——————————————sns.barplot(data=data,x="",y="")如果更细粒度的区分的话，还可以在x的基础上再划分，加入hue=""
+6.观看某个特征的数量分布，计数图——————————————sns.countplot(data=data,x="")
+7.万能作图——————————————————————————————————sns.factorplot(data=data,x="",y="",kind="bar?swarm?box",hue="")
